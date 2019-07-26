@@ -3,6 +3,7 @@ import TabNav from './components/TabNav.js';
 import Header from './components/Header.js';
 import AppRouter from './components/AppRouter.js';
 import LocationCard from './components/LocationCard.js'
+import EpisodeCard from './components/EpisodeCard.js'
 
 export default function App() {
   return <main>
@@ -10,5 +11,6 @@ export default function App() {
     <TabNav />
     <AppRouter />
     <LocationCard/>
+    <EpisodeCard/>
   </main>
 }
