@@ -1,22 +1,22 @@
 import React from 'react'
 import {Card, Icon, Image} from 'semantic-ui-react'
 
-export default function EpisodeCard (name, episode, airdate, characters){
+export default function EpisodeCard (props){
     return (
         <Card>
         <Card.Content>
-          <Card.Header>{name.name}</Card.Header>
+          <Card.Header>{props.name}</Card.Header>
           <Card.Meta>
-            {episode.episode}
+            Episode: {props.episode}
           </Card.Meta>
           <Card.Description>
-            {airdate.airdate}
+            Aired: {props.airdate}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
           <a>
-            <Icon name='user' />
-            22 Friends
+            <Icon name='video' />
+            Characters: {props.character}
           </a>
         </Card.Content>
       </Card>
